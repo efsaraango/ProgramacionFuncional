@@ -1,9 +1,9 @@
 // Definición de la función integracion
 def integracion(f: Double => Double, a: Double, b: Double): Double = {
   // Calcular el punto medio
-  val xMedio = (a + b) / 2
+  val xMedio: Double = (a + b) / 2
   // Aplicar la fórmula de Simpson 1/3
-  val resultado = (b - a) * (f(a) + 4 * f(xMedio) + f(b)) / 6
+  val resultado: Double = (b - a) * (f(a) + 4 * f(xMedio) + f(b)) / 6
   resultado
 }
 // Función para calcular el error absoluto
